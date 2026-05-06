@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Usage Tracker • Idődet Követjük</title>
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --dark: #0f172a;
+      --card: #1e2937;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+      color: #e2e8f0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      border-bottom: 1px solid #334155;
+    }
+    nav {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero-content {
+      max-width: 900px;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 4.2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #93c5fd, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      color: #94a3b8;
+      margin-bottom: 40px;
+    }
+    .download-btn {
+      background: linear-gradient(90deg, #3b82f6, #2563eb);
+      color: white;
+      padding: 18px 50px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      border-radius: 9999px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+      transition: all 0.3s;
+    }
+    .download-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(59, 130, 246, 0.5);
+    }
+    .features {
+      padding: 100px 0;
+      background: #1e2937;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 60px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: var(--card);
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      transition: 0.3s;
+      border: 1px solid #334155;
+    }
+    .card:hover {
+      transform: translateY(-15px);
+      border-color: #60a5fa;
+    }
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      background: #0f172a;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">PC Usage Tracker</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ne pazarold az idődet vakon</h1>
+      <p class="subtitle">Automatikusan követi, mire megy el a géped ideje.<br>
+      Steam • Epic • Roblox • Böngészés</p>
+      
+      <a href="PC_Usage_Tracker_Setup.exe" class="download-btn">
+        ⬇️ Telepítő letöltése
+      </a>
+      
+      <p style="margin-top: 30px; color:#64748b;">
+        Windows 10 & 11 • Ingyenes • Készítette: Kszebi
+      </p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Miért szeretik?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🎮 Okos Játékfelismerés</h3>
+          <p>Automatikusan felismeri a Steam, Epic és Roblox játékokat, még böngészőből is.</p>
+        </div>
+        <div class="card">
+          <h3>📈 Kumulatív Időkövetés</h3>
+          <p>Napokon keresztül összeadja az időt, nem resetelődik.</p>
+        </div>
+        <div class="card">
+          <h3>📊 Szép & Átlátható</h3>
+          <p>Hierarchikus nézet: launcher + konkrét játékok alatta.</p>
+        </div>
+        <div class="card">
+          <h3>🖥️ Teljesen Helyi</h3>
+          <p>Minden adat a saját gépeden marad. Nincs felhő, nincs adatgyűjtés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Készítette: <strong>Kszebi</strong> • 2026</p>
+  </footer>
+
+</body>
+</html>
